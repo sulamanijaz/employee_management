@@ -112,7 +112,7 @@ STATIC_ROOT = os.path.join(PROJECT_DIR, 'emp_manage_app/static/')
 
 # SETTINGS_PATH = os.path.dirname(os.path.dirname(__file__))
 # print SETTINGS_PATH,'dddddddd'
-
+LOGIN_URL = '/login'
 STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'emp_manage_app.User'
 TEMPLATE_DIRS = (os.path.join(PROJECT_DIR, 'emp_manage_app/templates/'),)

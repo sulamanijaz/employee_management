@@ -1,18 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d63d571e-c4a6-46e0-9230-f6fb6e8a076e" name="Default" comment="this is some ne changes">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/forms.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/static/css/bootstrap.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/static/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/home.html" />
+    <list default="true" id="d63d571e-c4a6-46e0-9230-f6fb6e8a076e" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/models.py" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/index.html" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/login.html" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/urls.py" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/urls.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/views.py" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/views.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/settings.py" afterPath="$PROJECT_DIR$/employee_management/settings.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -258,7 +248,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
-    <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -572,7 +562,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493735910973</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="this is some ne changes">
+      <created>1493847681033</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1493847681033</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -586,11 +583,11 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26613545" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993808" sideWeight="0.5059761" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3993808" sideWeight="0.5059761" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />

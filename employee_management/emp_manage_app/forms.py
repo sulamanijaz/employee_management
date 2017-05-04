@@ -24,8 +24,16 @@ class signupform1(ModelForm):
         fields = ['fullname','email']
         widgets = {'password': forms.PasswordInput()}
 
+
 class signupform2(ModelForm):
     class Meta:
         model = User
         fields = ['no_of_employees', 'password']
+        widgets = {'password': forms.PasswordInput()}
+
+
+class addsubuser(ModelForm):
+    class Meta:
+        model = User
+        fields = ['fullname','email', 'password']
         widgets = {'password': forms.PasswordInput()}

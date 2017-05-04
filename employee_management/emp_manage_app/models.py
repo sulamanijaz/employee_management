@@ -40,7 +40,7 @@ class UserManager(BaseUserManager):
 class User(AbstractBaseUser, PermissionsMixin):
     fullname = models.CharField(max_length=400)
     email = models.EmailField(max_length=140, unique=True)
-    no_of_employees = models.IntegerField(blank=True)
+    no_of_employees = models.IntegerField()
     time_zone = models.CharField(max_length=400)
     parent_user = models.IntegerField(blank=True)
     is_staff = models.BooleanField(default=True)

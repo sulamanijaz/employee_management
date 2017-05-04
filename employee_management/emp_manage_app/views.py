@@ -5,7 +5,7 @@ from django.template.context import RequestContext
 from django.http import HttpResponseRedirect, HttpResponse
 from datetime import datetime
 from django.db.models import Q
-from forms import userform
+from forms import userform, addsubuser
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render_to_response
 from formtools.wizard.views import WizardView, SessionWizardView
@@ -60,8 +60,12 @@ def login_user(request):
 
 @login_required
 def user_home(request):
+
+    user_object=User.objects.filter(parent_user=request.user.id)
+    user_count = user_object.count()
+    total_emp_to_add = int(request.user.no_of_employees)-int(user_count)
     return render_to_response('employee/home.html', {
-        'request': request, 'form': userform,
+        'request': request,'emp_to_add':total_emp_to_add ,'form': userform,
     }, RequestContext(request, {}))
 
 
@@ -93,3 +97,22 @@ class ContactWizard(SessionWizardView):
         login(self.request, user)
 
         return redirect('/home/')
+
+@login_required
+def add_sub_user(request):
+    if request.method == 'GET':
+        return render_to_response('employee/addsubuser.html', {
+            'request': request, 'form': addsubuser,
+        }, RequestContext(request, {}))
+
+
+    elif request.method == 'POST':
+        fullname = request.POST.get('fullname')
+        email = request.POST.get('email')
+        password = request.POST.get('password')
+
+        if fullname or email or password == '':
+            return render_to_response('employee/addsubuser.html', {
+                'request': request, 'form': addsubuser(request.POST),
+
+            }, RequestContext(request, {}))

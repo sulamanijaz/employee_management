@@ -10,6 +10,7 @@ urlpatterns = [
     url(r'^login/$', views.login_user, name='login_user'),
     url(r'^home/$', views.user_home, name='user_home'),
     url(r'^logout/$', views.user_logout, name='logout_user'),
+    url(r'^add_user/$', views.add_sub_user, name='add_sub_user'),
     url(r'^signup/$', ContactWizard.as_view([signupform1, signupform2]), name='signup_user'),
 
     # ex: /polls/5/

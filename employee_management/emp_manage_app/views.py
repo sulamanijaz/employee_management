@@ -63,9 +63,11 @@ def user_home(request):
 
     user_object=User.objects.filter(parent_user=request.user.id)
     user_count = user_object.count()
+    count = user_count + 1
     total_emp_to_add = int(request.user.no_of_employees)-int(user_count)
+
     return render_to_response('employee/home.html', {
-        'request': request,'emp_to_add':total_emp_to_add ,'form': userform,
+        'request': request,'emp_to_add':total_emp_to_add ,'count':count ,'form': userform,
     }, RequestContext(request, {}))
 
 
@@ -99,20 +101,37 @@ class ContactWizard(SessionWizardView):
         return redirect('/home/')
 
 @login_required
-def add_sub_user(request):
+def add_sub_user(request, msg=None):
+
+    user_object = User.objects.filter(parent_user=request.user.id)
+    user_count = user_object.count()
+    count = user_count + 1
+    total_emp_to_add = int(request.user.no_of_employees) - int(user_count)
+    t_emp = int(request.user.no_of_employees)
+    msgs=''
+    if msg:
+        msgs = msg
     if request.method == 'GET':
         return render_to_response('employee/addsubuser.html', {
-            'request': request, 'form': addsubuser,
+            'request': request, 'form': addsubuser,'count':count,
+            't_emp':t_emp,'msg':msgs
         }, RequestContext(request, {}))
-
 
     elif request.method == 'POST':
         fullname = request.POST.get('fullname')
         email = request.POST.get('email')
         password = request.POST.get('password')
 
-        if fullname or email or password == '':
-            return render_to_response('employee/addsubuser.html', {
-                'request': request, 'form': addsubuser(request.POST),
+        if not addsubuser(request.POST).is_valid():
+                return render_to_response('employee/addsubuser.html', {
+                    'request': request, 'form': addsubuser(request.POST),'count':count,
+                    't_emp':t_emp
 
-            }, RequestContext(request, {}))
+                }, RequestContext(request, {}))
+        else:
+            User.objects.create_user(email, password, fullname=fullname,
+                                      no_of_employees=0, is_staff=True,
+                                      time_zone='india', parent_user = request.user.id,
+                                     )
+            return redirect('/add_user/')
+

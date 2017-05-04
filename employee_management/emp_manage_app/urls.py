@@ -1,6 +1,8 @@
 from django.conf.urls import url
 
 from . import views
+from employee_management.emp_manage_app.views import ContactWizard
+from employee_management.emp_manage_app.forms import signupform1, signupform2
 
 urlpatterns = [
     # ex: /polls/
@@ -8,6 +10,7 @@ urlpatterns = [
     url(r'^login/$', views.login_user, name='login_user'),
     url(r'^home/$', views.user_home, name='user_home'),
     url(r'^logout/$', views.user_logout, name='logout_user'),
+    url(r'^signup/$', ContactWizard.as_view([signupform1, signupform2]), name='signup_user'),
 
     # ex: /polls/5/
 

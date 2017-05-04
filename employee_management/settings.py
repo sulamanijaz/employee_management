@@ -38,7 +38,8 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'employee_management.emp_manage_app'
+    'employee_management.emp_manage_app',
+    'formtools'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -116,4 +117,3 @@ LOGIN_URL = '/login'
 STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'emp_manage_app.User'
 TEMPLATE_DIRS = (os.path.join(PROJECT_DIR, 'emp_manage_app/templates/'),)
-print STATIC_ROOT

@@ -7,6 +7,10 @@ from datetime import datetime
 from django.db.models import Q
 from forms import userform
 from django.contrib.auth.decorators import login_required
+from django.shortcuts import render_to_response
+from formtools.wizard.views import WizardView, SessionWizardView
+from employee_management.emp_manage_app.models import User
+from django.shortcuts import redirect
 
 
 def index_home(request):
@@ -71,3 +75,21 @@ def user_logout(request):
 
     # Take the user back to the homepage.
     return HttpResponseRedirect('/home/')
+
+
+class ContactWizard(SessionWizardView):
+    template_name = 'employee/signup.html'
+
+    def done(self, form_list, form_dict ,**kwargs):
+        user_dict = []
+        for form in form_list:
+            user_dict.append(form.cleaned_data)
+        user_object=User.objects.create_superuser(user_dict[0]['email'], user_dict[1]['password'], fullname=user_dict[0]['fullname'],
+                                      no_of_employees=user_dict[1]['no_of_employees'], is_staff=False,
+                                      time_zone='india', parent_user = 0)
+
+        user = authenticate(username=user_object.email, password=user_dict[1]['password'])
+
+        login(self.request, user)
+
+        return redirect('/home/')

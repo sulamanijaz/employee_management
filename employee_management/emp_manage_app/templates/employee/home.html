@@ -10,7 +10,53 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="/static/css/main.css" />
-	</head>
+        <script src="/static/js/jquery.dataTables1.10.2.min.js"></script>
+        <link href="/static/css/jquery.dataTables.css" rel="stylesheet" type="text/css" />
+<style>
+
+#banner {
+    padding: 0 0 0 0 !important;
+}
+</style>
+
+
+<script type="text/javascript">
+$( document ).ready(function() {
+    ToDataTable('Tbl_desk_auto');
+
+});
+
+function ToDataTable(tablename) {
+    var _oTable = $('#' + tablename).DataTable({
+        "scrollX": true,
+        "scrollY": "210px",
+        "oLanguage": {
+        "sEmptyTable":  "No Data Found"
+    },
+
+     "order": [[ 5, 'desc' ]],
+     "aLengthMenu": [[5, 10, 15, -1], [5, 10, 15, "All"]],
+    "aoColumnDefs": [
+          { 'bSortable': false, 'aTargets': [ 0, 6 ] }
+       ]
+
+    });
+
+
+
+    _oTable.on( 'order.dt search.dt', function () {
+        _oTable.column(0, {search:'applied', order:'applied'}).nodes().each( function (cell, i) {
+            cell.innerHTML = i+1;
+        } );
+    } ).draw();
+}
+
+
+    </script>
+
+    </head>
+
+
 	<body>
 
 		<!-- Header -->
@@ -36,15 +82,32 @@
 			</nav>
 
 		<!-- Banner -->
-			<section id="banner">
-				<div class="content">
-					<h1>Employee Management Services</h1>
-					<p>Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod<br />sed arcu cras consecuat lorem ipsum dolor sit amet.</p>
-					<ul class="actions">
-						<li><a href="#one" class="button scrolly">Get Started</a></li>
-					</ul>
-				</div>
-			</section>
+				                                        <div>
+                                                            <table id="Tbl_desk_auto" class="display dataTable no-footer" width="100%" border="0" cellspacing="0" cellpadding="0">
+                                                                <thead>
+                                                                    <tr>
+                                                                        <th width="7%" class="ip_title1">Sr #</th>
+                                                                        <th width="22%" class="ip_title1">Label</th>
+                                                                        <th width="18%" class="ip_title1">AD Server</th>
+                                                                        <th width="18%" class="ip_title1">Connection Broker Server</th>
+                                                                        <th width="11%" class="ip_title1">Private IP</th>
+                                                                        <th width="20%" class="ip_title1">Creation Date</th>
+                                                                        <th width="4%" class="ip_title1">Actions</th>
+                                                                    </tr>
+                                                                </thead>
+                                                                <tbody>
+                                                                </tbody>
+                                                            </table>
+                                                        </div>
+                                                    </div>
+
+
+
+
+
+
+
+
 
 		<!-- One -->
 
@@ -52,19 +115,6 @@
 
 
 		<!-- Footer -->
-			<footer id="footer">
-				<div class="inner">
-					<h2>Get In Touch</h2>
-					<ul class="actions">
-						<li><span class="icon fa-phone"></span> <a href="#">(000) 000-0000</a></li>
-						<li><span class="icon fa-envelope"></span> <a href="#">information@untitled.tld</a></li>
-						<li><span class="icon fa-map-marker"></span> 123 Somewhere Road, Nashville, TN 00000</li>
-					</ul>
-				</div>
-				<div class="copyright">
-					&copy; Untitled. Design <a href="https://templated.co">TEMPLATED</a>. Images <a href="https://unsplash.com">Unsplash</a>.
-				</div>
-			</footer>
 
 		<!-- Scripts -->
 			<script src="/static/js/jquery.min.js"></script>

@@ -18,8 +18,6 @@ class UserManager(BaseUserManager):
         email = self.normalize_email(email)
         user = self.model(email=email, **extra_fields)
         user.set_password(password)
-        user.no_of_employees = 0
-        user.parent_user = 0
         user.save(using=self._db)
         return user
 

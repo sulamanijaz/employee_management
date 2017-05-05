@@ -1,12 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d63d571e-c4a6-46e0-9230-f6fb6e8a076e" name="Default" comment="">
+    <list default="true" id="d63d571e-c4a6-46e0-9230-f6fb6e8a076e" name="Default" comment="this is some ne changes">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/static/css/jquery.dataTables.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/static/css/jquery.dataTables_themeroller.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/static/css/jquery.dataTables.min.css" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/static/js/jquery.dataTables1.10.2.min.js" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/static/js/jquery.dataTables1.9.4.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/models.py" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/models.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/addsubuser.html" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/addsubuser.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/static/css/main.css" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/static/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/static/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/static/js/bootstrap.min.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/home.html" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/home.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/urls.py" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/signup.html" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/signup.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/views.py" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -28,8 +32,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+            <state relative-caret-position="225">
+              <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -40,8 +44,8 @@
       <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="135" column="40" lean-forward="false" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
+            <state relative-caret-position="223">
+              <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="17" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -52,23 +56,8 @@
       <file leaf-file-name="addsubuser.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/addsubuser.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="41" column="42" lean-forward="false" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#h2#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#table#0;n#form#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="465">
-              <caret line="34" column="16" lean-forward="false" selection-start-line="34" selection-start-column="6" selection-end-line="34" selection-end-column="16" />
+            <state relative-caret-position="51">
+              <caret line="97" column="21" lean-forward="true" selection-start-line="85" selection-start-column="12" selection-end-line="97" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -77,9 +66,11 @@
       <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="101">
-              <caret line="63" column="119" lean-forward="false" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="119" />
-              <folding />
+            <state relative-caret-position="900">
+              <caret line="84" column="74" lean-forward="false" selection-start-line="84" selection-start-column="70" selection-end-line="84" selection-end-column="74" />
+              <folding>
+                <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#table#0;n#form#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -87,12 +78,18 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="99" column="22" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="99" selection-end-column="22" />
+            <state relative-caret-position="105">
+              <caret line="163" column="62" lean-forward="true" selection-start-line="163" selection-start-column="62" selection-end-line="163" selection-end-column="62" />
               <folding>
-                <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#nav#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#h5#0;n#nav#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#nav#2;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -101,8 +98,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="52" />
+            <state relative-caret-position="180">
+              <caret line="12" column="62" lean-forward="false" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="62" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -113,8 +110,8 @@
       <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/login.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="157">
-              <caret line="58" column="42" lean-forward="true" selection-start-line="56" selection-start-column="32" selection-end-line="58" selection-end-column="42" />
+            <state relative-caret-position="870">
+              <caret line="58" column="42" lean-forward="false" selection-start-line="56" selection-start-column="32" selection-end-line="58" selection-end-column="42" />
               <folding />
             </state>
           </provider>
@@ -127,6 +124,7 @@
       <list>
         <option value="Python Script" />
         <option value="HTML File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
@@ -141,6 +139,21 @@
       <find>Tbl_desk_auto</find>
       <find>for</find>
       <find>for=&quot;id_fullname&quot;</find>
+      <find>center</find>
+      <find>.dataTables_wrapper .dataTables_leng</find>
+      <find>dataTables_length label select</find>
+      <find>Tbl_desk_auto_wrapper</find>
+      <find>.dataTables_length</find>
+      <find>.dataTables_length</find>
+      <find>.dataTables_wrapper</find>
+      <find>dataTables_lengt</find>
+      <find>dataTables_filter</find>
+      <find>.dataTables_filter</find>
+      <find>input[type=&quot;text&quot;]</find>
+      <find>&gt;</find>
+      <find>.dataTables_le</find>
+      <find>left</find>
+      <find>top_buttons</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -158,16 +171,20 @@
         <option value="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/login.html" />
         <option value="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/index.html" />
         <option value="$PROJECT_DIR$/employee_management/settings.py" />
-        <option value="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/signup.html" />
         <option value="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/base.html" />
-        <option value="$PROJECT_DIR$/employee_management/emp_manage_app/static/css/jquery.dataTables.css" />
-        <option value="$PROJECT_DIR$/employee_management/emp_manage_app/static/js/jquery.dataTables1.10.2.min.js" />
         <option value="$PROJECT_DIR$/employee_management/emp_manage_app/static/js/jquery.min.js" />
         <option value="$PROJECT_DIR$/employee_management/emp_manage_app/forms.py" />
         <option value="$PROJECT_DIR$/employee_management/emp_manage_app/models.py" />
         <option value="$PROJECT_DIR$/employee_management/emp_manage_app/urls.py" />
-        <option value="$PROJECT_DIR$/employee_management/emp_manage_app/views.py" />
         <option value="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/addsubuser.html" />
+        <option value="$PROJECT_DIR$/employee_management/emp_manage_app/views.py" />
+        <option value="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/signup.html" />
+        <option value="$PROJECT_DIR$/employee_management/emp_manage_app/static/js/jquery.dataTables1.10.2.min.js" />
+        <option value="$PROJECT_DIR$/employee_management/emp_manage_app/static/css/jquery.dataTables.min.css" />
+        <option value="$PROJECT_DIR$/employee_management/emp_manage_app/static/css/jquery.dataTables_themeroller.css.html" />
+        <option value="$PROJECT_DIR$/employee_management/emp_manage_app/static/css/main.css" />
+        <option value="$PROJECT_DIR$/employee_management/emp_manage_app/static/css/jquery.dataTables_themeroller.css" />
+        <option value="$PROJECT_DIR$/employee_management/emp_manage_app/static/css/jquery.dataTables.css" />
         <option value="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/home.html" />
       </list>
     </option>
@@ -200,7 +217,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -263,11 +280,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="templates" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="employee" />
+              <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -292,10 +305,14 @@
               <option name="myItemId" value="static" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -304,19 +321,20 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="settings.editor.selected.configurable" value="settings.github" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/employee_management/emp_manage_app" />
+      <recent name="$PROJECT_DIR$/employee_management/templates/employee" />
+      <recent name="$PROJECT_DIR$/employee_management" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/employee_management/emp_manage_app/static/css" />
       <recent name="$PROJECT_DIR$/employee_management/emp_manage_app/static/js" />
       <recent name="$PROJECT_DIR$/employee_management/emp_manage_app/static/images" />
       <recent name="$PROJECT_DIR$/employee_management/templates" />
       <recent name="$PROJECT_DIR$/employee_management/static/js" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/employee_management/emp_manage_app" />
-      <recent name="$PROJECT_DIR$/employee_management/templates/employee" />
-      <recent name="$PROJECT_DIR$/employee_management" />
     </key>
   </component>
   <component name="RunManager" selected="Django server.employee_management">
@@ -673,7 +691,14 @@
       <option name="project" value="LOCAL" />
       <updated>1493932843778</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="this is some ne changes">
+      <created>1493937098532</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1493937098532</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -689,23 +714,23 @@
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1625498" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16494024" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32817337" sideWeight="0.5123506" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32972136" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32817337" sideWeight="0.49402392" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32662538" sideWeight="0.4876494" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32662538" sideWeight="0.4876494" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3993808" sideWeight="0.49402392" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3993808" sideWeight="0.49402392" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -741,32 +766,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/employee_management/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee_management/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="118" column="17" lean-forward="false" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/forms.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
@@ -964,7 +963,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="145" column="0" lean-forward="false" selection-start-line="145" selection-start-column="0" selection-end-line="145" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1021,20 +1019,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/static/css/jquery.dataTables.min.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/static/js/jquery.dataTables1.10.2.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="167" column="0" lean-forward="true" selection-start-line="167" selection-start-column="0" selection-end-line="167" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/static/js/jquery.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="164940">
@@ -1074,18 +1058,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/signup.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="63" column="119" lean-forward="false" selection-start-line="63" selection-start-column="24" selection-end-line="63" selection-end-column="119" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/models.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="21" column="19" lean-forward="true" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
+        <state relative-caret-position="225">
+          <caret line="21" column="19" lean-forward="false" selection-start-line="21" selection-start-column="19" selection-end-line="21" selection-end-column="19" />
           <folding>
             <element signature="e#0#28#0" expanded="true" />
           </folding>
@@ -1094,16 +1070,79 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="157">
-          <caret line="58" column="42" lean-forward="true" selection-start-line="56" selection-start-column="32" selection-end-line="58" selection-end-column="42" />
+        <state relative-caret-position="870">
+          <caret line="58" column="42" lean-forward="false" selection-start-line="56" selection-start-column="32" selection-end-line="58" selection-end-column="42" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/static/css/jquery.dataTables_themeroller.css.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/static/js/jquery.dataTables1.9.4.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10858">
+          <caret line="12099" column="0" lean-forward="false" selection-start-line="12099" selection-start-column="0" selection-end-line="12099" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <marker date="1493980885933" expanded="true" signature="148278:148350" ph="..." />
+            <marker date="1493980885933" expanded="true" signature="148373:148440" ph="..." />
+            <marker date="1493980885933" expanded="true" signature="148484:148508" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/static/css/jquery.dataTables_themeroller.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="72" column="1" lean-forward="true" selection-start-line="72" selection-start-column="1" selection-end-line="72" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/static/css/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="206">
+          <caret line="1930" column="5" lean-forward="true" selection-start-line="1924" selection-start-column="4" selection-end-line="1930" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/static/css/jquery.dataTables.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-53">
+          <caret line="60" column="21" lean-forward="true" selection-start-line="60" selection-start-column="21" selection-end-line="60" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/addsubuser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="97" column="21" lean-forward="true" selection-start-line="85" selection-start-column="12" selection-end-line="97" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/signup.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="84" column="74" lean-forward="false" selection-start-line="84" selection-start-column="70" selection-end-line="84" selection-end-column="74" />
+          <folding>
+            <element signature="n#style#0;n#h2#0;n#div#0;n#div#0;n#table#0;n#form#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="135" column="40" lean-forward="false" selection-start-line="135" selection-start-column="40" selection-end-line="135" selection-end-column="40" />
+        <state relative-caret-position="223">
+          <caret line="71" column="17" lean-forward="false" selection-start-line="71" selection-start-column="9" selection-end-line="71" selection-end-column="17" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
@@ -1112,35 +1151,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="52" lean-forward="false" selection-start-line="10" selection-start-column="43" selection-end-line="10" selection-end-column="52" />
+        <state relative-caret-position="180">
+          <caret line="12" column="62" lean-forward="false" selection-start-line="12" selection-start-column="50" selection-end-line="12" selection-end-column="62" />
           <folding>
             <element signature="e#0#32#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/addsubuser.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="41" column="42" lean-forward="false" selection-start-line="41" selection-start-column="42" selection-end-line="41" selection-end-column="42" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#h2#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#table#0;n#form#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#input#0;n#form#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/home.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
-          <caret line="99" column="22" lean-forward="true" selection-start-line="82" selection-start-column="8" selection-end-line="99" selection-end-column="22" />
+        <state relative-caret-position="105">
+          <caret line="163" column="62" lean-forward="true" selection-start-line="163" selection-start-column="62" selection-end-line="163" selection-end-column="62" />
           <folding>
-            <element signature="n#style#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#nav#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#h5#0;n#nav#1;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#nav#2;n#header#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#section#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#table#0;n#div#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

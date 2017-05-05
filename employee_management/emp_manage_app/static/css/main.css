@@ -1926,7 +1926,7 @@
 	input[type="password"],
 	input[type="email"],
 	select {
-		height: 3.5em;
+		height: 2.5em;
 		line-height: 3.5em;
 	}
 

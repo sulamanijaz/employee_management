@@ -67,7 +67,9 @@ def user_home(request):
     total_emp_to_add = int(request.user.no_of_employees)-int(user_count)
 
     return render_to_response('employee/home.html', {
-        'request': request,'emp_to_add':total_emp_to_add ,'count':count ,'form': userform,
+        'request': request,'emp_to_add':total_emp_to_add ,
+        'count':count ,'form': userform,
+        'user_obj':user_object
     }, RequestContext(request, {}))
 
 

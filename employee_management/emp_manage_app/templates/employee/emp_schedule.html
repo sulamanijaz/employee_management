@@ -1,0 +1,178 @@
+{% load i18n %}
+
+
+
+<!DOCTYPE HTML>
+<!--
+	Intensify by TEMPLATED
+	templated.co @templatedco
+	Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	{% block head %}
+{{ wizard.form.media }}
+<style>
+
+
+
+.errorlist{
+    font-weight: bold;
+    color: orangered;
+}
+
+
+#banner {
+    padding: 0 0 0 0 !important;
+}
+</style>
+
+	<head>
+        <link rel="stylesheet" href="/static/css/main.css" />
+		<link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/static/css/bootstrap-theme.min.css" />
+        <link rel="stylesheet" href="/static/css/bootstrap-datetimepicker.css" />
+
+         <script src="/static/js/moment.js"></script>
+        <script src="/static/js/jquery-1.8.3.min.js"></script>
+        <script src="/static/js/multi_select.js"></script>
+
+        <script src="/static/js/bootstrap.min.js"></script>
+        <script src="/static/js/jquery.scrolly.min.js"></script>
+        <script src="/static/js/bootstrap-datetimepicker.min.js"></script>
+
+        <script src="/static/js/skel.min.js"></script>
+        <script src="/static/js/util.js"></script>
+        <script src="/static/js/main.js"></script>
+		<title>EMS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+	</head>
+{% endblock %}
+{% block content %}
+<script>
+$(function () {
+    $('#datetimepicker1').datetimepicker({
+        locale:'en'
+    });
+    $('#datetimepicker2').datetimepicker({
+        locale:'en'
+    });
+});
+
+</script>
+   <body>
+
+		<!-- Header -->
+			<header id="header">
+				<a href="{% url 'user_home' %}" class="logo">EMS</a>
+				<nav class="right">
+					<a href="{% url 'logout_user' %}" class="button alt">Log out</a>
+				</nav>
+			</header>
+
+		<!-- Menu -->
+			<nav id="menu">
+				<ul class="links">
+					<li><a href="index.html">Home</a></li>
+					<li><a href="generic.html">Generic</a></li>
+					<li><a href="elements.html">Elements</a></li>
+				</ul>
+				<ul class="actions vertical">
+					<li><a href="{% url 'login_user' %}" class="button fit">Login</a></li>
+				</ul>
+			</nav>
+
+
+        <h2 style="text-align: center; width: 100%; margin: 0 0 0 ; font-size: 20px;">Employee Registration</h2>
+		<!-- Banner -->
+
+			        <form action="" onsubmit="multipleSelectOnSubmit()" method="post">{% csrf_token %}
+                        <div class="form-group col-xs-4 col-md-4" style="margin-left: 527px;margin-bottom: 100px;">
+
+                        <label for="name" class="control-label">Shift Starts:</label>
+
+                                  <div class='input-group date' id='datetimepicker1'>
+                                    <span class="input-group-addon">
+                                      <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                    <input type='text' name="shift_starts"  class="form-control" placeholder="Date & Time" />
+                                  </div>
+
+                           <label for="name" class="control-label">Shift Ends:</label>
+                                  <div class='input-group date' id='datetimepicker2'>
+                                    <span class="input-group-addon">
+                                      <span class="glyphicon glyphicon-calendar"></span>
+                                    </span>
+                                    <input type='text' name="shift_ends"  class="form-control" placeholder="Date & Time" />
+                                  </div>
+                            {{ form.as_table }}
+                             <label for="name" class="control-label">Select Users:</label>
+                            <div class="hiding" style="width: 220px;float: left; ">
+
+                                            <div class="formRow" style="    margin-top: -17px;">
+                                                <label for="field0">&nbsp;</label>
+
+                                                <select multiple name="fromBox_cats" id="fromBox_cats">
+                                                                                                          {% for user_obj in user_object %}
+                                                                                                    <option value="{{ user_obj.id }}">{{ user_obj.fullname }}</option>
+                                                                                                    {% endfor %}
+                                                </select>
+                                                <select multiple name="toBox_cats[]" id="toBox_cats" style="margin-left:35px;">
+                                                </select>
+
+
+
+
+
+                                                <script type="text/javascript">
+                                                    createMovableOptions("fromBox_cats", "toBox_cats", 650, 80, 'All Users', 'Selected Users');
+                                                </script>
+                                            </div>
+
+                                        </div>
+
+                                        <script type="text/javascript">
+                                            createMovableOptions("VM_List", "selected_VM_List", 650, 80, 'All Users', 'Selected Users');
+                                        </script>
+
+
+
+
+                         <input type="submit" style="margin-left: 350px;" value="save and add another">
+                        </div>
+                    </form>
+
+
+
+
+		<!-- One -->
+
+		<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<h2>Get In Touch</h2>
+					<ul class="actions">
+						<li><span class="icon fa-phone"></span> <a href="#">(000) 000-0000</a></li>
+						<li><span class="icon fa-envelope"></span> <a href="#">information@untitled.tld</a></li>
+						<li><span class="icon fa-map-marker"></span> 123 Somewhere Road, Nashville, TN 00000</li>
+					</ul>
+				</div>
+				<div class="copyright">
+					&copy; Untitled. Design <a href="https://templated.co">TEMPLATED</a>. Images <a href="https://unsplash.com">Unsplash</a>.
+				</div>
+			</footer>
+
+		<!-- Scripts -->
+
+	</body>
+    <script type="application/javascript">
+
+
+    </script>
+{% endblock %}
+
+</html>
+
+
+

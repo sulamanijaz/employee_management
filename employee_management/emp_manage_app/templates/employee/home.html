@@ -10,7 +10,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link rel="stylesheet" href="/static/css/main.css" />
 		<link rel="stylesheet" href="/static/css/bootstrap-responsive.css" />
-		<link rel="stylesheet" href="/static/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="/static/css/bootstrap.css" />
 
   <link rel="stylesheet" type="text/css" href="/static/css/jquery.dataTables.css">
     <link rel="stylesheet" type="text/css" href="/static/css/jquery.dataTables_themeroller.css">
@@ -76,30 +76,6 @@
     box-shadow: inset 0px 1px 0px #07A9C2;
 }
 
-.btn {
-    /* border: 0 none; */
-    border-radius: 0;
-    font-size: 11px;
-    font-weight: normal;
-    line-height: 1.42857;
-    margin-bottom: 0;
-    padding: 2px 6px;
-    text-align: center;
-    vertical-align: middle;
-    white-space: nowrap;
-        background-color: #ebebeb;
-    border: 1px solid #d8d8d8;
-}
-
-    .btn-group1 .action_img {
-    background: url(/.../imgs/icons/actions.png) no-repeat;
-    width: 18px;
-    height: 18px;
-    float: left;
-    margin-left: 6px;
-    margin-right: 6px;
-}
-
     .tooltip1 {
     outline: none;
     cursor: help;
@@ -110,42 +86,23 @@
     display: inline-block;
     width: 100%;
 }
-.dropdown-menu1 {
-    position: absolute;
-    z-index: 1000;
-    display: none;
-    min-width: 140px;
-    max-width: 160px;
-    padding: 4px 0;
-    margin: 0 0 0 -100px;
-    list-style: none;
-    background-color: #ffffff;
-    border: 1px solid #ccc;
-    border: 1px solid rgba(0, 0, 0, 0.2);
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-    -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
-    -webkit-background-clip: padding-box;
-    -moz-background-clip: padding-box;
-    background-clip: padding-box;
-    text-align: left;
-    /* right: 0; */
-}
+
     .dropdown-menu1 {
-    margin: 0 0 0 -22px;
-}
-
-.dropdown-menu1 {
-    min-width: 80px;
-}
-.dropdown-menu1 {
-    z-index: 2147483647;
-}
+        margin: 0 0 0 -22px;
+    }
 
 
+    .dropdown-menu1 {
+        min-width: 80px;
+    }
+   
+    .dropdown-menu1 {
+        z-index: 2147483647;
+    }
+
+    .w100 {
+        width: 100%;
+    }
 
 </style>
 </head>
@@ -182,14 +139,17 @@
 						<div style="font-weight: bold; color: lightslategrey; width: 100%">
 
                             You have total {{ emp_to_add }} Employees login data to add.
-
 						</div>
-
                     </div>
                 </div>
-            <div style="float: right; margin-right: 158px;margin-right: 158px;margin-bottom: 100px;margin-left: 453px;margin-bottom: 10px;margin-top: -63px;">
-          <a data-toggle="modal" href="{% url 'add_sub_user' %}" rel="popover" title="Add Port" data-content="Add New">   <button href="{% url 'add_sub_user' %}"  type="submit" class="top_buttons">Add New</button></a>
-      </div>
+
+                <div style="float: right;margin-right: 290px;margin-bottom: 100px;margin-left: 453px;margin-bottom: 10px;margin-top: -63px;">
+                            <a data-toggle="modal" href="{% url 'emp_schedule' %}" rel="popover" title="Add Port" data-content="Bulk schedule">   <button href="{% url 'emp_schedule' %}"  type="submit" class="top_buttons">Bulk schedule</button></a>
+                </div>
+
+                <div style="float: right; margin-right: 158px;margin-bottom: 100px;margin-left: 453px;margin-bottom: 10px;margin-top: -63px;">
+                            <a data-toggle="modal" href="{% url 'add_sub_user' %}" rel="popover" title="Add Port" data-content="Add New">   <button href="{% url 'add_sub_user' %}"  type="submit" class="top_buttons">Add New</button></a>
+                </div>
 			</section>
 
 
@@ -247,7 +207,7 @@
                                                             </table>
                                 </div>
                                       </div>></div>
-  <script type="text/javascript" charset="utf8" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.2.min.js"></script>
+  <script type="text/javascript" charset="utf8" src="/static/js/jquery-3.2.1.min.js"></script>
   <script type="text/javascript" charset="utf8" src="/static/js/jquery.dataTables1.9.4.js"></script>
   <script>
  $( document ).ready(function() {

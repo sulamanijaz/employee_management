@@ -5,7 +5,7 @@ from django.template.context import RequestContext
 from django.http import HttpResponseRedirect, HttpResponse
 from datetime import datetime
 from django.db.models import Q
-from forms import userform, addsubuser
+from forms import userform, addsubuser, addschedule
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render_to_response
 from formtools.wizard.views import WizardView, SessionWizardView
@@ -137,3 +137,17 @@ def add_sub_user(request, msg=None):
                                      )
             return redirect('/add_user/')
 
+
+@login_required
+def emp_schedule(request):
+
+    user_object=User.objects.filter(parent_user=request.user.id)
+    if request.method == 'POST':
+        print request.POST.get('shift_starts')
+
+
+    return render_to_response('employee/emp_schedule.html', {
+        'request': request,'user_object':user_object ,'form': addschedule(),
+
+
+    }, RequestContext(request, {}))

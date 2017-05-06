@@ -5,6 +5,7 @@ from django.contrib.auth.models import UserManager
 from django.contrib.auth.models import BaseUserManager, AbstractBaseUser
 from django.conf import settings
 from django.core.mail import send_mail
+from django.core.validators import RegexValidator
 # Create your models here.
 
 
@@ -35,10 +36,11 @@ class UserManager(BaseUserManager):
         return self._create_user(email, password, **extra_fields)
 
 
-
-
 class User(AbstractBaseUser, PermissionsMixin):
     fullname = models.CharField(max_length=400)
+    phone_regex = RegexValidator(regex=r'^\+?1?\d{9,15}$',
+                                 message="Phone number must be entered in the format: '+999999999'. Up to 15 digits allowed.")
+    phone_number = models.CharField(validators=[phone_regex], blank=True, max_length=20)
     email = models.EmailField(max_length=140, unique=True)
     no_of_employees = models.IntegerField()
     time_zone = models.CharField(max_length=400)
@@ -85,6 +87,7 @@ class Employees(models.Model):
 class EmployeeSchedule(models.Model):
     parent_user = models.ForeignKey(settings.AUTH_USER_MODEL,related_name='sch_parent', on_delete=models.CASCADE)
     employee_id = models.ForeignKey(settings.AUTH_USER_MODEL,related_name='sch_employee', on_delete=models.CASCADE)
-    Day_date = models.DateTimeField()
+    # Day_date = models.DateTimeField()
     shift_start = models.DateTimeField()
     shift_ends = models.DateTimeField()
+    availability = models.NullBooleanField(default=True)

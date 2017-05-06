@@ -1,5 +1,5 @@
 from django.forms import ModelForm, TextInput
-from employee_management.emp_manage_app.models import User
+from employee_management.emp_manage_app.models import User, EmployeeSchedule
 from django import forms
 from django.contrib.auth import authenticate
 
@@ -21,8 +21,7 @@ class userform(ModelForm):
 class signupform1(ModelForm):
     class Meta:
         model = User
-        fields = ['fullname','email']
-        widgets = {'password': forms.PasswordInput()}
+        fields = ['fullname','email', 'phone_number']
 
 
 class signupform2(ModelForm):
@@ -37,3 +36,9 @@ class addsubuser(ModelForm):
         model = User
         fields = ['fullname','email', 'password']
         widgets = {'password': forms.PasswordInput()}
+
+class addschedule(ModelForm):
+    class Meta:
+        model = EmployeeSchedule
+        fields=['availability']
+

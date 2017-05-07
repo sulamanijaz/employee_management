@@ -9,7 +9,7 @@ from forms import userform, addsubuser, addschedule
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import render_to_response
 from formtools.wizard.views import WizardView, SessionWizardView
-from employee_management.emp_manage_app.models import User
+from employee_management.emp_manage_app.models import User, EmployeeSchedule
 from django.shortcuts import redirect
 
 
@@ -140,14 +140,29 @@ def add_sub_user(request, msg=None):
 
 @login_required
 def emp_schedule(request):
-
+    msg = ''
     user_object=User.objects.filter(parent_user=request.user.id)
     if request.method == 'POST':
-        print request.POST.get('shift_starts')
+        shift_starts=request.POST.get('shift_starts', None)
+        shift_ends = request.POST.get('shift_ends', None)
+        toBox_cats = request.POST.getlist('toBox_cats[]', None)
+        availability = request.POST.get('availability', None)
+        recurrance = request.POST.get('recurrance', None)
+        shift_starts = datetime.strptime(shift_starts, "%Y-%m-%d %H:%M")
+        shift_ends = datetime.strptime(shift_ends, "%Y-%m-%d %H:%M")
 
+        if toBox_cats:
+            emp_schedule_list = []
+            for user in toBox_cats:
+                emp_schedule_list.append(EmployeeSchedule(parent_user=User.objects.get(pk=request.user.id), shift_start=shift_starts,
+                                                          shift_ends=shift_ends, employee_id=User.objects.get(pk=user), availability=availability)
+                                         )
+            EmployeeSchedule.objects.bulk_create([data for data in emp_schedule_list])
+
+            msg = "Schedule For selected users has been created successfully."
 
     return render_to_response('employee/emp_schedule.html', {
-        'request': request,'user_object':user_object ,'form': addschedule(),
+        'request': request,'user_object':user_object ,'msg':msg,'form': addschedule(),
 
 
     }, RequestContext(request, {}))

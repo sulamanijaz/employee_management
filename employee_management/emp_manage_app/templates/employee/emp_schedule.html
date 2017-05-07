@@ -83,8 +83,12 @@ $(function () {
 				</ul>
 			</nav>
 
-
-        <h2 style="text-align: center; width: 100%; margin: 0 0 0 ; font-size: 20px;">Employee Registration</h2>
+                    {% if msg %}
+                                <div style="width: 37%;margin-left: 510px;" class="alert alert-success" >
+                                      {{ msg }}.
+                                    </div>
+                    {% endif %}
+        <h2 style="text-align: center; width: 100%; margin: 0 0 0 ; font-size: 20px;">Employees Schedule In Bulk </h2>
 		<!-- Banner -->
 
 			        <form action="" onsubmit="multipleSelectOnSubmit()" method="post">{% csrf_token %}
@@ -107,6 +111,14 @@ $(function () {
                                     <input type='text' name="shift_ends"  class="form-control" placeholder="Date & Time" />
                                   </div>
                             {{ form.as_table }}
+                        <label for="name" class="control-label">Recuring</label>
+                        <select class="form-control" name="recurrance" placeholder="repeat event couple of time">
+                            <option value="0">Select a recuring event</option>
+                            <option value="1">Repeat 1 month</option>
+                            <option value="2">Repeat 2 month</option>
+                            <option value="3">Repeat 3 month</option>
+                            <option value="4">Repeat 4 month</option>
+                        </select>
                              <label for="name" class="control-label">Select Users:</label>
                             <div class="hiding" style="width: 220px;float: left; ">
 

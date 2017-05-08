@@ -13,6 +13,7 @@ urlpatterns = [
     url(r'^add_user/$', views.add_sub_user, name='add_sub_user'),
     url(r'^add_user/(?P<msg>[\w\-]+)/$', views.add_sub_user),
     url(r'^schedule/$', views.emp_schedule, name='emp_schedule'),
+    url(r'^schedule_detail/(?P<id>[\d\-]+)/$$', views.emp_detail_shift, name='emp_schedule_detail'),
     url(r'^signup/$', ContactWizard.as_view([signupform1, signupform2]), name='signup_user'),
 
     # ex: /polls/5/

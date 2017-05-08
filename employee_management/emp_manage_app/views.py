@@ -155,14 +155,24 @@ def emp_schedule(request):
             emp_schedule_list = []
             for user in toBox_cats:
                 emp_schedule_list.append(EmployeeSchedule(parent_user=User.objects.get(pk=request.user.id), shift_start=shift_starts,
-                                                          shift_ends=shift_ends, employee_id=User.objects.get(pk=user), availability=availability)
+                                                          shift_ends=shift_ends, employee_id=User.objects.get(pk=user),
+                                                          availability=availability, recurring=recurrance)
                                          )
-            EmployeeSchedule.objects.bulk_create([data for data in emp_schedule_list])
+            EmployeeSchedule.objects.bulk_create([emp_sch_obj for emp_sch_obj in emp_schedule_list])
 
             msg = "Schedule For selected users has been created successfully."
 
     return render_to_response('employee/emp_schedule.html', {
         'request': request,'user_object':user_object ,'msg':msg,'form': addschedule(),
 
+
+    }, RequestContext(request, {}))
+
+@login_required
+def emp_detail_shift(request, id):
+    emp_obj = EmployeeSchedule.objects.filter(employee_id=id).order_by('-shift_start')
+    print emp_obj.count(),'count'
+    return render_to_response('employee/detail_schedule_emp.html', {
+        'request': request, 'emp_obj': emp_obj
 
     }, RequestContext(request, {}))

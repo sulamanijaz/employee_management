@@ -114,10 +114,10 @@ $(function () {
                         <label for="name" class="control-label">Recuring</label>
                         <select class="form-control" name="recurrance" placeholder="repeat event couple of time">
                             <option value="0">Select a recuring event</option>
-                            <option value="1">Repeat 1 month</option>
-                            <option value="2">Repeat 2 month</option>
-                            <option value="3">Repeat 3 month</option>
-                            <option value="4">Repeat 4 month</option>
+                            <option value="4 weeks">Repeat 1 month</option>
+                            <option value="8 weeks">Repeat 2 month</option>
+                            <option value="12 weeks">Repeat 3 month</option>
+                            <option value="16 weeks">Repeat 4 month</option>
                         </select>
                              <label for="name" class="control-label">Select Users:</label>
                             <div class="hiding" style="width: 220px;float: left; ">
@@ -179,6 +179,74 @@ $(function () {
 
 	</body>
     <script type="application/javascript">
+
+$('#schedule_task_button').click(function(e){
+
+  var vm_s = typeof $('#toBox_cats option').val()
+  if ($('#select_task').val() != 'up_down') {
+    if($('#select_task')[0].selectedIndex == 0){
+        $('#lbl_vmtovm_error_msg_add').text('Please select a valid task')
+        $('#lbl_vmtovm_error_msg').show()
+        e.preventDefault();
+    }
+    else if ($('#task_lable').val().length == 0) {
+          $('#lbl_vmtovm_error_msg_add').text('Please give your task a label')
+          $('#lbl_vmtovm_error_msg').show()
+          e.preventDefault();
+      }
+      else if (!moment($('#slider_example_4').val()).isValid()) {
+          $('#lbl_vmtovm_error_msg_add').text('Please Select a valid date')
+          $('#lbl_vmtovm_error_msg').show()
+          e.preventDefault();
+
+      }
+      else if($('#enable_reccuring').is(':checked') && $('#above_time').is(':checked') && (!$.isNumeric($('#recurring_days').val()) || $('#recurring_days').val().length == 0)){
+          $('#lbl_vmtovm_error_msg_add').text('Please give a numeric number for recurrance')
+          $('#lbl_vmtovm_error_msg').show()
+          e.preventDefault();
+      }
+      else if ($('#enable_reccuring').is(':checked') && !($('#above_time').is(':checked') || $('#given').is(':checked'))) {
+        $('#lbl_vmtovm_error_msg_add').text('Please check at least one option to set your preferred recurrence type')
+        $('#lbl_vmtovm_error_msg').show()
+        e.preventDefault();
+
+      }
+
+      else if($('#task_email').is(':checked') && $.trim( $('#user_email').val()).length == 0){
+          $('#lbl_vmtovm_error_msg_add').text('Please provide at least one email address for task initiation email')
+          $('#lbl_vmtovm_error_msg').show()
+          e.preventDefault();
+
+      }
+     else if($('#task_email').is(':checked') &&  run($('#user_email').val()) == false){
+
+          $('#lbl_vmtovm_error_msg_add').text('There is some problem in ur email')
+          $('#lbl_vmtovm_error_msg').show()
+          e.preventDefault();
+
+    }
+      else if (vm_s == "undefined"){
+        $('#lbl_vmtovm_error_msg_add').text('Please select at least one virtual machine from the list')
+          $('#lbl_vmtovm_error_msg').show()
+          e.preventDefault();
+
+        }
+      else if ($('#hidden_error_field').val()){
+         $('#lbl_vmtovm_error_msg_add').text('Duplicate label found, please give a different label')
+          $('#lbl_vmtovm_error_msg').show()
+        e.preventDefault();
+
+    }
+      }
+  else {
+
+           $('#lbl_vmtovm_error_msg').hide()
+
+      }
+
+})
+
+
 
 
     </script>

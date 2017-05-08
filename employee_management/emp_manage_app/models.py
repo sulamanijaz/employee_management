@@ -91,3 +91,4 @@ class EmployeeSchedule(models.Model):
     shift_start = models.DateTimeField()
     shift_ends = models.DateTimeField()
     availability = models.NullBooleanField(default=True)
+    recurring = models.CharField(max_length=200)

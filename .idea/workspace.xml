@@ -2,10 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d63d571e-c4a6-46e0-9230-f6fb6e8a076e" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/detail_schedule_emp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/templatetags/__init__.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/templatetags/custom_tags.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/forms.py" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/forms.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/models.py" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/models.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/emp_schedule.html" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/emp_schedule.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/signup.html" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/signup.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/home.html" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/home.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/urls.py" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/urls.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/employee_management/emp_manage_app/views.py" afterPath="$PROJECT_DIR$/employee_management/emp_manage_app/views.py" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -27,8 +31,8 @@
       <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="88" column="15" lean-forward="false" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="15" />
+            <state relative-caret-position="105">
+              <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
               <folding>
                 <element signature="e#0#28#0" expanded="true" />
               </folding>
@@ -36,11 +40,23 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="custom_tags.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templatetags/custom_tags.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="270">
+              <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+              <folding>
+                <element signature="e#0#35#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
-              <caret line="167" column="35" lean-forward="true" selection-start-line="167" selection-start-column="35" selection-end-line="167" selection-end-column="35" />
+            <state relative-caret-position="178">
+              <caret line="172" column="73" lean-forward="false" selection-start-line="172" selection-start-column="73" selection-end-line="172" selection-end-column="73" />
               <folding>
                 <element signature="e#0#51#0" expanded="true" />
               </folding>
@@ -48,31 +64,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="59" column="39" lean-forward="true" selection-start-line="55" selection-start-column="28" selection-end-line="59" selection-end-column="39" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="addsubuser.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/addsubuser.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1500">
-              <caret line="100" column="55" lean-forward="false" selection-start-line="100" selection-start-column="55" selection-end-line="100" selection-end-column="55" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="emp_schedule.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/emp_schedule.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="86" column="55" lean-forward="false" selection-start-line="86" selection-start-column="55" selection-end-line="86" selection-end-column="55" />
+            <state relative-caret-position="-65">
+              <caret line="119" column="45" lean-forward="false" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
               <folding />
             </state>
           </provider>
@@ -81,7 +77,7 @@
       <file leaf-file-name="forms.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/forms.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
+            <state relative-caret-position="495">
               <caret line="36" column="63" lean-forward="false" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
               <folding>
                 <element signature="e#0#45#0" expanded="true" />
@@ -93,7 +89,7 @@
       <file leaf-file-name="signup.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/signup.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
+            <state relative-caret-position="1710">
               <caret line="114" column="48" lean-forward="false" selection-start-line="114" selection-start-column="48" selection-end-line="114" selection-end-column="48" />
               <folding />
             </state>
@@ -103,8 +99,28 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3135">
-              <caret line="209" column="83" lean-forward="false" selection-start-line="209" selection-start-column="83" selection-end-line="209" selection-end-column="83" />
+            <state relative-caret-position="105">
+              <caret line="181" column="117" lean-forward="false" selection-start-line="181" selection-start-column="117" selection-end-line="181" selection-end-column="117" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="detail_schedule_emp.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/detail_schedule_emp.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="161" column="100" lean-forward="false" selection-start-line="161" selection-start-column="100" selection-end-line="161" selection-end-column="100" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="defaultfilters.py" pinned="false" current-in-tab="false">
+        <entry file="file://$USER_HOME$/emp_management_env/local/lib/python2.7/site-packages/django/template/defaultfilters.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-16">
+              <caret line="763" column="4" lean-forward="false" selection-start-line="763" selection-start-column="4" selection-end-line="763" selection-end-column="4" />
               <folding />
             </state>
           </provider>
@@ -113,8 +129,8 @@
       <file leaf-file-name="urls.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="14" column="62" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="62" />
+            <state relative-caret-position="193">
+              <caret line="15" column="97" lean-forward="false" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="97" />
               <folding>
                 <element signature="e#0#32#0" expanded="true" />
               </folding>
@@ -127,10 +143,10 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Python Script" />
         <option value="CSS File" />
-        <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="Python Script" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -142,7 +158,6 @@
       <find>orm</find>
       <find>form</find>
       <find>trans</find>
-      <find>Tbl_desk_auto</find>
       <find>for</find>
       <find>for=&quot;id_fullname&quot;</find>
       <find>center</find>
@@ -166,6 +181,7 @@
       <find>``</find>
       <find>boot</find>
       <find>jqueryjquery-3.2.1.min</find>
+      <find>Tbl_desk_auto</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -190,16 +206,18 @@
         <option value="$PROJECT_DIR$/employee_management/emp_manage_app/static/css/jquery.dataTables_themeroller.css.html" />
         <option value="$PROJECT_DIR$/employee_management/emp_manage_app/static/css/jquery.dataTables_themeroller.css" />
         <option value="$PROJECT_DIR$/employee_management/emp_manage_app/static/css/jquery.dataTables.css" />
-        <option value="$PROJECT_DIR$/employee_management/emp_manage_app/urls.py" />
-        <option value="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/home.html" />
         <option value="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/addsubuser.html" />
         <option value="$PROJECT_DIR$/employee_management/emp_manage_app/static/js/moment.js" />
-        <option value="$PROJECT_DIR$/employee_management/emp_manage_app/models.py" />
         <option value="$PROJECT_DIR$/employee_management/emp_manage_app/static/css/main.css" />
         <option value="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/signup.html" />
         <option value="$PROJECT_DIR$/employee_management/emp_manage_app/forms.py" />
         <option value="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/emp_schedule.html" />
+        <option value="$PROJECT_DIR$/employee_management/emp_manage_app/templatetags/custom_tags.py" />
+        <option value="$PROJECT_DIR$/employee_management/emp_manage_app/models.py" />
+        <option value="$PROJECT_DIR$/employee_management/emp_manage_app/urls.py" />
+        <option value="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/home.html" />
         <option value="$PROJECT_DIR$/employee_management/emp_manage_app/views.py" />
+        <option value="$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/detail_schedule_emp.html" />
       </list>
     </option>
   </component>
@@ -231,8 +249,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -308,7 +326,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$USER_HOME$/wtoolgui" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="js.eslint.eslintPackage" value="" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
@@ -704,7 +722,14 @@
       <option name="project" value="LOCAL" />
       <updated>1494113981622</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="adding date time options and multi select">
+      <created>1494193762797</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1494193762797</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TodoView">
@@ -720,7 +745,7 @@
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17768924" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1808765" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32817337" sideWeight="0.5123506" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -728,7 +753,7 @@
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287037" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32817337" sideWeight="0.49402392" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24940239" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32253087" sideWeight="0.4876494" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32198143" sideWeight="0.4876494" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3993808" sideWeight="0.49402392" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -756,7 +781,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="17" />
+      <option name="time" value="19" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Python.DjangoServer">
@@ -769,45 +794,11 @@
         <watch expression="user_object.password" language="Python" />
         <watch expression="request.user.id" language="Python" />
         <watch expression="request.user" language="Python" />
+        <watch expression="shift" language="Python" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="7" column="55" lean-forward="false" selection-start-line="7" selection-start-column="45" selection-end-line="7" selection-end-column="55" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee_management/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="9" column="11" lean-forward="false" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#41#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee_management/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1770">
-          <caret line="118" column="17" lean-forward="false" selection-start-line="118" selection-start-column="17" selection-end-line="118" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="195">
-          <caret line="13" column="10" lean-forward="true" selection-start-line="13" selection-start-column="10" selection-end-line="13" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/employee_management/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1004,16 +995,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="62" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="62" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/emp_management_env/local/lib/python2.7/site-packages/django/db/models/fields/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1026,14 +1007,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="36" column="0" lean-forward="false" selection-start-line="36" selection-start-column="0" selection-end-line="36" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/home.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3135">
-          <caret line="209" column="83" lean-forward="false" selection-start-line="209" selection-start-column="83" selection-end-line="209" selection-end-column="83" />
           <folding />
         </state>
       </provider>
@@ -1069,7 +1042,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/forms.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
+        <state relative-caret-position="495">
           <caret line="36" column="63" lean-forward="false" selection-start-line="36" selection-start-column="63" selection-end-line="36" selection-end-column="63" />
           <folding>
             <element signature="e#0#45#0" expanded="true" />
@@ -1079,7 +1052,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/signup.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="652">
+        <state relative-caret-position="1710">
           <caret line="114" column="48" lean-forward="false" selection-start-line="114" selection-start-column="48" selection-end-line="114" selection-end-column="48" />
           <folding />
         </state>
@@ -1090,16 +1063,6 @@
         <state relative-caret-position="119">
           <caret line="131" column="0" lean-forward="false" selection-start-line="131" selection-start-column="0" selection-end-line="131" selection-end-column="0" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="208">
-          <caret line="88" column="15" lean-forward="false" selection-start-line="88" selection-start-column="4" selection-end-line="88" selection-end-column="15" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1121,27 +1084,89 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/login.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="59" column="39" lean-forward="true" selection-start-line="55" selection-start-column="28" selection-end-line="59" selection-end-column="39" />
+        <state relative-caret-position="885">
+          <caret line="59" column="39" lean-forward="false" selection-start-line="55" selection-start-column="28" selection-end-line="59" selection-end-column="39" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/emp_management_env/local/lib/python2.7/site-packages/django/template/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="1194" column="0" lean-forward="false" selection-start-line="1194" selection-start-column="0" selection-end-line="1194" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="77" column="0" lean-forward="false" selection-start-line="77" selection-start-column="0" selection-end-line="77" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#28#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="193">
+          <caret line="15" column="97" lean-forward="false" selection-start-line="15" selection-start-column="78" selection-end-line="15" selection-end-column="97" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templatetags/custom_tags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="19" lean-forward="true" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="19" />
+          <folding>
+            <element signature="e#0#35#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/emp_schedule.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="86" column="55" lean-forward="false" selection-start-line="86" selection-start-column="55" selection-end-line="86" selection-end-column="55" />
+        <state relative-caret-position="-65">
+          <caret line="119" column="45" lean-forward="false" selection-start-line="119" selection-start-column="45" selection-end-line="119" selection-end-column="45" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/emp_management_env/local/lib/python2.7/site-packages/django/template/defaultfilters.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-16">
+          <caret line="763" column="4" lean-forward="false" selection-start-line="763" selection-start-column="4" selection-end-line="763" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="181" column="117" lean-forward="false" selection-start-line="181" selection-start-column="117" selection-end-line="181" selection-end-column="117" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="167" column="35" lean-forward="true" selection-start-line="167" selection-start-column="35" selection-end-line="167" selection-end-column="35" />
+        <state relative-caret-position="178">
+          <caret line="172" column="73" lean-forward="false" selection-start-line="172" selection-start-column="73" selection-end-line="172" selection-end-column="73" />
           <folding>
             <element signature="e#0#51#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/employee_management/emp_manage_app/templates/employee/detail_schedule_emp.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="161" column="100" lean-forward="false" selection-start-line="161" selection-start-column="100" selection-end-line="161" selection-end-column="100" />
+          <folding />
         </state>
       </provider>
     </entry>

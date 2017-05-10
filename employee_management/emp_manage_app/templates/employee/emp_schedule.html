@@ -88,38 +88,61 @@ $(function () {
                                       {{ msg }}.
                                     </div>
                     {% endif %}
-        <h2 style="text-align: center; width: 100%; margin: 0 0 0 ; font-size: 20px;">Employees Schedule In Bulk </h2>
+        <h2 style="font-size: 20px;margin:11px 0 13px 51px;text-align: center;width: 100%;">Employees Schedule In Bulk </h2>
 		<!-- Banner -->
 
 			        <form action="" onsubmit="multipleSelectOnSubmit()" method="post">{% csrf_token %}
-                        <div class="form-group col-xs-4 col-md-4" style="margin-left: 527px;margin-bottom: 100px;">
-
-                        <label for="name" class="control-label">Shift Starts:</label>
-
+                        <div class="row form-inline form-group" style="margin-left: 527px;margin-bottom: 100px;">
+                        <fieldset>
+                        <div class="">
+                                <label for="name" class="control-label">Shift Starts:</label>
+                        </div>
+                        <div class="form-group">
                                   <div class='input-group date' id='datetimepicker1'>
                                     <span class="input-group-addon">
                                       <span class="glyphicon glyphicon-calendar"></span>
                                     </span>
                                     <input type='text' name="shift_starts"  class="form-control" placeholder="Date & Time" />
                                   </div>
-
+                        </div>
+                        <div class="">
                            <label for="name" class="control-label">Shift Ends:</label>
-                                  <div class='input-group date' id='datetimepicker2'>
+                        </div>
+                        <div class="form-group">
+                            <div class='input-group date' id='datetimepicker2'>
                                     <span class="input-group-addon">
                                       <span class="glyphicon glyphicon-calendar"></span>
                                     </span>
                                     <input type='text' name="shift_ends"  class="form-control" placeholder="Date & Time" />
                                   </div>
-                            {{ form.as_table }}
-                        <label for="name" class="control-label">Recuring</label>
-                        <select class="form-control" name="recurrance" placeholder="repeat event couple of time">
+                        </div>
+                        <div class="">
+                                <label for="id_availability">Availability:</label>
+                        </div>
+                        <div class="form-group">
+                                <select id="id_availability" name="availability">
+                                    <option value="1">Unknown</option>
+                                    <option value="2" selected="selected">Yes</option>
+                                    <option value="3">No</option>
+                                </select>
+
+                        </div>
+                        <div class="">
+                            <label for="name" class="control-label">Recuring</label>
+                        </div>
+                        <div class="form-group">
+                            <select class="form-control" name="recurrance" placeholder="repeat event couple of time">
                             <option value="0">Select a recuring event</option>
                             <option value="4 weeks">Repeat 1 month</option>
                             <option value="8 weeks">Repeat 2 month</option>
                             <option value="12 weeks">Repeat 3 month</option>
                             <option value="16 weeks">Repeat 4 month</option>
                         </select>
+                        </div>
+                        <div class="">
                              <label for="name" class="control-label">Select Users:</label>
+                        </div>
+                        <div class="form-group">
                             <div class="hiding" style="width: 220px;float: left; ">
 
                                             <div class="formRow" style="    margin-top: -17px;">
@@ -148,10 +171,9 @@ $(function () {
                                             createMovableOptions("VM_List", "selected_VM_List", 650, 80, 'All Users', 'Selected Users');
                                         </script>
 
-
-
-
+                        </div>
                          <input type="submit" style="margin-left: 350px;" value="save and add another">
+                        </fieldset>
                         </div>
                     </form>
 

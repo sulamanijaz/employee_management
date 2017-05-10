@@ -66,6 +66,7 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
             ],
         },
     },
@@ -117,3 +118,7 @@ LOGIN_URL = '/login'
 STATIC_URL = '/static/'
 AUTH_USER_MODEL = 'emp_manage_app.User'
 TEMPLATE_DIRS = (os.path.join(PROJECT_DIR, 'emp_manage_app/templates/'),)
+
+MEDIA_URL = '/media/'
+MEDIA_ROOT = os.path.join(PROJECT_DIR,'media/')
+print MEDIA_ROOT, TEMPLATE_DIRS

@@ -46,6 +46,7 @@ class User(AbstractBaseUser, PermissionsMixin):
     time_zone = models.CharField(max_length=400)
     parent_user = models.IntegerField(blank=True)
     is_staff = models.BooleanField(default=True)
+    user_avatar = models.ImageField()
 
     objects = UserManager()
 

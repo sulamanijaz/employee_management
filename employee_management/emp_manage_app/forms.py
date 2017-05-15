@@ -34,7 +34,7 @@ class signupform2(ModelForm):
 class addsubuser(ModelForm):
     class Meta:
         model = User
-        fields = ['fullname','email', 'password', 'phone_number']
+        fields = ['fullname','email', 'password', 'phone_number', 'user_avatar']
         widgets = {'password': forms.PasswordInput()}
 
 class addschedule(ModelForm):

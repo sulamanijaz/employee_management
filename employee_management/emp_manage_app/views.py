@@ -123,6 +123,8 @@ def add_sub_user(request, msg=None):
         fullname = request.POST.get('fullname')
         email = request.POST.get('email')
         password = request.POST.get('password')
+        image = request.FILES['user_avatar']
+
 
         if not addsubuser(request.POST).is_valid():
                 return render_to_response('employee/addsubuser.html', {
@@ -134,6 +136,7 @@ def add_sub_user(request, msg=None):
             User.objects.create_user(email, password, fullname=fullname,
                                       no_of_employees=0, is_staff=True,
                                       time_zone='india', parent_user = request.user.id,
+                                      user_avatar=image
                                      )
             return redirect('/add_user/')
 
@@ -176,3 +179,9 @@ def emp_detail_shift(request, id):
         'request': request, 'emp_obj': emp_obj
 
     }, RequestContext(request, {}))
+@login_required
+def upload_image(request):
+    if request.method == 'POST' and request.FILES['my_file']:
+        myfile = request.FILES['my_file']
+        User.objects.filter(pk=request.user.id).update(user_avatar=myfile)
+    return redirect('/home/')
